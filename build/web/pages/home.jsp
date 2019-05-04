@@ -81,7 +81,7 @@
                         <div class="featured-text text-center text-lg-left">
                             <h4>Clientes</h4>
                             <p class="text-black-50 mb-0">Nossos clientes são fundamentais para o progresso de nossa organização. A cada nova parceria, um novo laço de amizade e confiança!</p>
-                            <button type="button" class="btn btn-dark">Consultar</button>
+                            <button type="button" class="btn btn-dark" style="margin-top: 40px; margin-left: 70px">Consultar</button>
                         </div>
                     </div>
                 </div>      
@@ -100,7 +100,7 @@
                         <div class="featured-text text-center text-lg-left">
                             <h4>Fornecedores</h4>
                             <p class="text-black-50 mb-0">Os fornecedores são os que nos ajudam a estar em dia com nossos clientes, sem eles não seríamos o mesmo. Sempre atribuímos parte do nosso sucesso a eles.</p>
-                            <button type="button" class="btn btn-dark">Consultar</button>
+                            <button type="button" class="btn btn-dark" style="margin-top: 40px; margin-left: 70px">Consultar</button>
                         </div>
                     </div>
                 </div>      
