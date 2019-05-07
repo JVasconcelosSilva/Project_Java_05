@@ -48,7 +48,7 @@
                             <a class="nav-link js-scroll-trigger" href="#clientes">Clientes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#fornecedores">Fornecedores</a>
+                            <a class="nav-link js-scroll-trigger" href="#fornecedores">Fabricantes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="#signup">Informações</a>
@@ -98,9 +98,9 @@
                     </div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>Fornecedores</h4>
-                            <p class="text-black-50 mb-0">Os fornecedores são os que nos ajudam a estar em dia com nossos clientes, sem eles não seríamos o mesmo. Sempre atribuímos parte do nosso sucesso a eles.</p>
-                            <button type="button" class="btn btn-dark" style="margin-top: 40px; margin-left: 70px">Consultar</button>
+                            <h4>Fabricantes</h4>
+                            <p class="text-black-50 mb-0">Os Fabricantes são os que nos ajudam a estar em dia com nossos clientes, sem eles não seríamos o mesmo. Sempre atribuímos parte do nosso sucesso a eles.</p>
+                            <button type="button" class="btn btn-dark" style="margin-top: 40px; margin-left: 70px"> <a href="manufacturer.jsp" style="text-decoration: none; color: white">Consultar</a></button>
                         </div>
                     </div>
                 </div>      
