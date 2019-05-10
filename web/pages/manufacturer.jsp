@@ -1,7 +1,7 @@
 <%-- 
     Document   : manufacturer
     Created on : 05/05/2019, 15:17:10
-    Author     : Manoel Rodriguez
+    Author     : Manoel Rodriguez, Jefferson V.
 --%>
 
 <%@page import="br.com.fatecpg.jdbc.Manufacturer"%>
@@ -44,8 +44,9 @@
                     <th scope="col">ID</th>
                     <th scope="col">Nome</th>
                     <th scope="col">Cidade</th>
+                    <th scope="col">Estado</th>
                     <th scope="col">E-mail</th>
-
+                    <th scope="col">Detalhes</th>
                 </tr>
             </thead>
             <tbody>
@@ -54,12 +55,14 @@
                     <th><%= m.getId()%></th>
                     <td><%= m.getNome()%></td>
                     <td><%= m.getCidade()%></td>
+                    <td><%= m.getEstado()%></td>
                     <td><%= m.getEmail()%></td>
-
+                    <td scope="col"><a href="detalhes.jsp<%=m.getId()%>">Detalhes</td>
                 </tr>
+                <%}%>
             </tbody>
         </table>
-                <%}%>
+                
         <%} catch (Exception e) {%>
         <h3 style="color: red">Erro: <%= e.getMessage()%></h3>
         <%}%>
