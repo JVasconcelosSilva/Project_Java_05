@@ -120,7 +120,7 @@ public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <div class=\"featured-text text-center text-lg-left\">\n");
       out.write("                            <h4>Clientes</h4>\n");
       out.write("                            <p class=\"text-black-50 mb-0\">Nossos clientes são fundamentais para o progresso de nossa organização. A cada nova parceria, um novo laço de amizade e confiança!</p>\n");
-      out.write("                            <button type=\"button\" class=\"btn btn-dark\" style=\"margin-top: 40px; margin-left: 70px\">Consultar</button>\n");
+      out.write("                            <button type=\"button\" class=\"btn btn-dark\" style=\"margin-top: 40px; margin-left: 70px\"><a href=\"customers.jsp\" style=\"text-decoration: none; color: white\">Consultar</a></button>\n");
       out.write("                        </div>\n");
       out.write("                    </div>\n");
       out.write("                </div>      \n");

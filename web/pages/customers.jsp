@@ -1,7 +1,7 @@
 <%-- 
-    Document   : manufacturer
-    Created on : 05/05/2019, 15:17:10
-    Author     : Manoel Rodriguez, Jefferson V.
+    Document   : customers
+    Created on : 11/05/2019, 01:50:36
+    Author     : Manoel Rodriguez
 --%>
 
 <%@page import="br.com.fatecpg.jdbc.Manufacturer"%>
@@ -14,7 +14,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Fabricantes</title>
+        <title>Clientes</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
               integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <style>
@@ -52,27 +52,23 @@
 
         <%try {%>
     <center>
-        <h2>Fabricantes</h2>
+        <h2>Clientes</h2>
         <table class="table">
             <thead class="thead-dark">
                 <tr>
                     <th scope="col">ID</th>
                     <th scope="col">Nome</th>
-                    <th scope="col">Cidade</th>
-                    <th scope="col">Estado</th>
                     <th scope="col">E-mail</th>
                     <th scope="col">Detalhes</th>
                 </tr>
             </thead>
             <tbody>
-                <%for (Manufacturer m : Manufacturer.getList()) {%>
+                <%for (Customer c : Customer.getList()) {%>
                 <tr>
-                    <th><%= m.getId()%></th>
-                    <td><%= m.getNome()%></td>
-                    <td><%= m.getCidade()%></td>
-                    <td><%= m.getEstado()%></td>
-                    <td><%= m.getEmail()%></td>
-                    <td scope="col"><a href="detalhes.jsp<%=m.getId()%>">Detalhes</td>
+                    <th><%= c.getId()%></th>
+                    <td><%= c.getName()%></td>
+                    <td><%= c.getEmail()%></td>
+                    <td scope="col"><a href="detalhes.jsp<%=c.getId()%>">Detalhes</td>
                 </tr>
                 <%}%>
             </tbody>

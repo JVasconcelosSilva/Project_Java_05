@@ -81,7 +81,7 @@
                         <div class="featured-text text-center text-lg-left">
                             <h4>Clientes</h4>
                             <p class="text-black-50 mb-0">Nossos clientes são fundamentais para o progresso de nossa organização. A cada nova parceria, um novo laço de amizade e confiança!</p>
-                            <button type="button" class="btn btn-dark" style="margin-top: 40px; margin-left: 70px">Consultar</button>
+                            <button type="button" class="btn btn-dark" style="margin-top: 40px; margin-left: 70px"><a href="customers.jsp" style="text-decoration: none; color: white">Consultar</a></button>
                         </div>
                     </div>
                 </div>      

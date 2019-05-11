@@ -23,10 +23,13 @@
                 margin-left: 20px;
             }
             .table{
-                width: 500px;
+                width: 800px;
                 margin-top: 60px;
             }
             th{
+                text-align: center;
+            }
+            td{
                 text-align: center;
             }
             h2{
