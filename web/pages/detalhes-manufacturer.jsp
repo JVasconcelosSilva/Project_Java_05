@@ -1,23 +1,22 @@
 <%-- 
-    Document   : manufacturer
-    Created on : 05/05/2019, 15:17:10
-    Author     : Manoel Rodriguez, Jefferson V.
+    Document   : detalhes
+    Created on : 11/05/2019, 11:44:13
+    Author     : Jefferson V.
 --%>
 
 <%@page import="br.com.fatecpg.jdbc.Manufacturer"%>
-<%@page import="br.com.fatecpg.jdbc.Customer"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Fabricantes</title>
+        <title>JSP Page</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
               integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <style>
+    </head>
+    <style>
             img{
                 width: 50px;
                 margin-left: 20px;
@@ -36,9 +35,6 @@
                 margin-top: 100px;
             }
         </style>
-
-    </head>
-
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
             <a class="navbar-brand" href="home.jsp" style="color: white"><img src="img/home4.png" alt=""></a>
@@ -49,49 +45,37 @@
 
 
         </nav>
-
         <%try {%>
-    <center>
-        <h2>Fabricantes</h2>
+        
+        <% if(request.getParameter("id")!=null) { %>
+        <% int id = Integer.parseInt(request.getParameter("id"));%>
+        <% String nome = (request.getParameter("nome"));%>
+        <center>
+        <h2><%=nome%> : Produtos</h2>
         <table class="table">
             <thead class="thead-dark">
                 <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Nome</th>
-                    <th scope="col">Cidade</th>
-                    <th scope="col">Estado</th>
-                    <th scope="col">E-mail</th>
-                    <th scope="col">Detalhes</th>
+                    <th scope="col">Produtos</th>
                 </tr>
             </thead>
             <tbody>
-                <%for (Manufacturer m : Manufacturer.getList()) {%>
+                <%for (Manufacturer m : Manufacturer.getDetails(id)) {%>
                 <tr>
-                    <th><%= m.getId()%></th>
-                    <td><%= m.getNome()%></td>
-                    <td><%= m.getCidade()%></td>
-                    <td><%= m.getEstado()%></td>
-                    <td><%= m.getEmail()%></td>
-                    <td scope="col"><a href="detalhes-manufacturer.jsp?id=<%=m.getId()%>&nome=<%=m.getNome()%>">Lista de Produtos</td>
+                    <th><%= m.getProduto()%></th>
+                    
                 </tr>
                 <%}%>
             </tbody>
         </table>
 
     </center>    
+        
+        <%}else{%>
+        <h1>Nenhum valor a ser exibido</h1>
+    <%}%>
+    
     <%} catch (Exception e) {%>
     <h3 style="color: red">Erro: <%= e.getMessage()%></h3>
     <%}%>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-</body>
-
+    </body>
 </html>

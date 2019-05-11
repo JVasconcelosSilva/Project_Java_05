@@ -72,7 +72,7 @@
                     <td><%= m.getCidade()%></td>
                     <td><%= m.getEstado()%></td>
                     <td><%= m.getEmail()%></td>
-                    <td scope="col"><a href="detalhes.jsp<%=m.getId()%>">Detalhes</td>
+                    <td scope="col"><a href="detalhes-manufacturer.jsp?id=<%=m.getId()%>&nome=<%=m.getNome()%>">Lista de Produtos</td>
                 </tr>
                 <%}%>
             </tbody>
