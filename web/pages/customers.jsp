@@ -68,7 +68,7 @@
                     <th><%= c.getId()%></th>
                     <td><%= c.getName()%></td>
                     <td><%= c.getEmail()%></td>
-                    <td scope="col"><a href="detalhes.jsp<%=c.getId()%>">Detalhes</td>
+                    <td scope="col"><a href="detalhes-customers.jsp?id=<%=c.getId()%>&nome=<%=c.getName()%>">Lista de Compras</td>
                 </tr>
                 <%}%>
             </tbody>

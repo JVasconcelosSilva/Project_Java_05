@@ -17,24 +17,24 @@
               integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     </head>
     <style>
-            img{
-                width: 50px;
-                margin-left: 20px;
-            }
-            .table{
-                width: 800px;
-                margin-top: 60px;
-            }
-            th{
-                text-align: center;
-            }
-            td{
-                text-align: center;
-            }
-            h2{
-                margin-top: 100px;
-            }
-        </style>
+        img{
+            width: 50px;
+            margin-left: 20px;
+        }
+        .table{
+            width: 800px;
+            margin-top: 60px;
+        }
+        th{
+            text-align: center;
+        }
+        td{
+            text-align: center;
+        }
+        h2{
+            margin-top: 100px;
+        }
+    </style>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
             <a class="navbar-brand" href="home.jsp" style="color: white"><img src="img/home4.png" alt=""></a>
@@ -46,11 +46,11 @@
 
         </nav>
         <%try {%>
-        
-        <% if(request.getParameter("id")!=null) { %>
+
+        <% if (request.getParameter("id") != null) { %>
         <% int id = Integer.parseInt(request.getParameter("id"));%>
         <% String nome = (request.getParameter("nome"));%>
-        <center>
+    <center>
         <h2><%=nome%> : Produtos</h2>
         <table class="table">
             <thead class="thead-dark">
@@ -62,20 +62,20 @@
                 <%for (Manufacturer m : Manufacturer.getDetails(id)) {%>
                 <tr>
                     <th><%= m.getProduto()%></th>
-                    
+
                 </tr>
                 <%}%>
             </tbody>
         </table>
 
     </center>    
-        
-        <%}else{%>
-        <h1>Nenhum valor a ser exibido</h1>
+
+    <%} else {%>
+    <h1>Nenhum valor a ser exibido</h1>
     <%}%>
-    
+
     <%} catch (Exception e) {%>
     <h3 style="color: red">Erro: <%= e.getMessage()%></h3>
     <%}%>
-    </body>
+</body>
 </html>
