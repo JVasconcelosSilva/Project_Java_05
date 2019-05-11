@@ -74,17 +74,11 @@
                 <%}%>
             </tbody>
         </table>
-<<<<<<< HEAD
+
     </center>    
     <%} catch (Exception e) {%>
     <h3 style="color: red">Erro: <%= e.getMessage()%></h3>
     <%}%>
-=======
-                
-        <%} catch (Exception e) {%>
-        <h3 style="color: red">Erro: <%= e.getMessage()%></h3>
-        <%}%>
->>>>>>> c533f161b343900942590c6b03e26272fcecef0a
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
