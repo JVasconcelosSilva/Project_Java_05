@@ -35,14 +35,13 @@
         h2{
             margin-top: 100px;
         }
-<<<<<<< HEAD
+
         footer{
             position:absolute;
             bottom:0;
             width:100%;
         }
-=======
->>>>>>> ffa50017043382e6b85b52b68553ccce15ec5b57
+
     </style>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
@@ -90,7 +89,7 @@
     <%} catch (Exception e) {%>
     <h3 style="color: red">Erro: <%= e.getMessage()%></h3>
     <%}%>
-<<<<<<< HEAD
+
 
     <center>
         <footer>
@@ -98,7 +97,6 @@
             <p>Copyright &copy; Fatec 2019</p>
         </footer>
     </center>
-=======
->>>>>>> ffa50017043382e6b85b52b68553ccce15ec5b57
+
 </body>
 </html>
