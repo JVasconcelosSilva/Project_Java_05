@@ -18,6 +18,7 @@ public class Manufacturer {
     private String cidade;
     private String estado;
     private String email;
+    private String produto;
 
     public static ArrayList<Manufacturer> getList() throws Exception {
         ArrayList<Manufacturer> list = new ArrayList<>();
@@ -39,6 +40,24 @@ public class Manufacturer {
         st.close();
         con.close();
         return list;
+    }
+    
+    public static ArrayList<Manufacturer> getDetails(int id) throws Exception {
+        ArrayList<Manufacturer> detalhes = new ArrayList<>();
+        Class.forName("org.apache.derby.jdbc.ClientDriver");
+        String url = "jdbc:derby://localhost:1527/sample";
+        Connection con = DriverManager.getConnection(url, "app", "app");
+        Statement st = con.createStatement();
+        ResultSet rs = st.executeQuery("SELECT DESCRIPTION FROM PRODUCT WHERE MANUFACTURER_ID = " + id);
+        while (rs.next()) {
+            Manufacturer c = new Manufacturer();
+            c.setProduto(rs.getString("DESCRIPTION"));
+            detalhes.add(c);
+        }
+        rs.close();
+        st.close();
+        con.close();
+        return detalhes;
     }
 
     public Manufacturer() {
@@ -90,6 +109,14 @@ public class Manufacturer {
 
     public void setEstado(String estado) {
         this.estado = estado;
+    }
+
+    public String getProduto() {
+        return produto;
+    }
+
+    public void setProduto(String produto) {
+        this.produto = produto;
     }
 
 }

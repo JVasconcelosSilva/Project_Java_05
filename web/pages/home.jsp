@@ -17,15 +17,15 @@
 
         <title>Home</title>
 
-        <!-- Bootstrap core CSS -->
+        
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Custom fonts for this template -->
+        
         <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-        <!-- Custom styles for this template -->
+        
         <link href="css/grayscale.min.css" rel="stylesheet">
         <link href="css/grayscale.css" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -34,7 +34,7 @@
 
     <body id="page-top">
 
-        <!-- Navigation -->
+        
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand js-scroll-trigger" href="#page-top">Projeto 5</a>
@@ -58,7 +58,7 @@
             </div>
         </nav>
 
-        <!-- Header -->
+        
         <header class="masthead">
             <div class="container d-flex h-100 align-items-center">
                 <div class="mx-auto text-center">
@@ -68,11 +68,11 @@
             </div>
         </header>
 
-        <!-- Clientes -->
+        
         <section id="clientes" class="projects-section bg-light" style="margin-top: -50px">
             <div class="container">
 
-                <!-- Featured Project Row -->
+                
                 <div class="row align-items-center no-gutters mb-4 mb-lg-5">
                     <div class="col-xl-8 col-lg-7">
                         <img class="img-fluid mb-3 mb-lg-0" src="img/clientes2.jpg" alt="">
@@ -91,7 +91,7 @@
         <section id="fornecedores" class="projects-section bg-light">
             <div class="container" style=" margin-top: -150px;">
 
-                <!-- Featured Project Row -->
+                
                 <div class="row align-items-center no-gutters mb-4 mb-lg-5">
                     <div class="col-xl-8 col-lg-7">
                         <img class="img-fluid mb-3 mb-lg-0" src="img/fornecedores.png" alt="">
